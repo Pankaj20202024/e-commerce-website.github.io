@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rare Rabbit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            background: url(shopping4.webp) no-repeat center center/cover;
+            height: 69vh;
+        }
+
+        .maincontainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 104vh;
+            background: rgb(41, 40, 40, 0.70);
+        }
+
+        #headings {
+            display: flex;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        #company_name {
+            color:aquamarine;
+            font-family: 'Baloo Bhai 2', cursive;
+            position: relative;
+            left: 2%;
+        }
+
+        #company_name:hover {
+            cursor: pointer;
+            transform: scale(1.06);
+            color: rgb(7, 232, 157);
+        }
+
+        #company_name a{
+            color: rgb(7, 232, 157);
+            text-decoration: none;
+        }
+
+        #topbrandname {
+            color:aquamarine;
+            font-family: 'Baloo Bhai 2', cursive;
+            position: relative;
+            left: 22%;
+
+        }
+ 
+        #topbrandname:hover {
+            cursor: pointer;
+
+        }
+
+        /* css code for container contaning image for men items  */
+
+        .container_switcher {
+            width: 90%;
+            margin-left: 15px;
+            height: 70vh;
+        }
+
+        .container_for_images_of_innner_content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+            height: 80vh;
+        }
+
+
+        .divs_for_putting_images {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+
+        .image_for_inner_content {
+            min-width: 205px;
+            height: 250px;
+            margin: 0.84%;
+        }
+
+        .image_for_inner_content img {
+            border: 2px solid aquamarine;
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .image_for_inner_content img:hover {
+            transform: scale(1.06);
+        }
+
+
+        /* css code for putting the discount and name of the brand  */
+
+        .topbrand {
+            position: relative;
+            left: 0.9%;
+            top: -37%;
+            background-color: rgb(41, 40, 40, 0.70);
+            font-size: 1.3rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            border-radius: 5%;
+            cursor: pointer;
+            color: aquamarine;
+        }
+
+        .topbrand_discount {
+            position: relative;
+            left: 42%;
+            top: -143%;
+            background-color: rgb(41, 40, 40, 0.70);
+            font-size: 0.7rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            border-radius: 15%;
+            width: 55%;
+            cursor: pointer;
+            color: aquamarine;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div id="headings">
+            <h1 id="company_name"><a href="CompanyDescription.html" target="_blank">ShopOn</a></h1>
+            <h1 id="topbrandname"> Rare Rabbit Vertical-Knit Textured Men Shirt</h1>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher1">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for shirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="rarerabbit1.webp" alt="image not found" id="rare_rabbit1_topbrand_images"
+                            onmouseover="onmoseoverchange1()" onmouseout="onmouseoutchange1()">
+                        <div class="topbrand">
+                            <p>GEOMETRIC PATTERN SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit5.webp" alt="image not found" id="rare_rabbit2_topbrand_images"
+                            onmouseover="onmoseoverchange2()" onmouseout="onmouseoutchange2()">
+                        <div class="topbrand">
+                            <p>GEOMETRIC PATTERN SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 30% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit9.webp" alt="image not found" id="rare_rabbit3_topbrand_images"
+                            onmouseover="onmoseoverchange3()" onmouseout="onmouseoutchange3()">
+                        <div class="topbrand">
+                            <p>PREMIUM STRETCH SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit13.webp" alt="image not found" id="rare_rabbit4_topbrand_images"
+                            onmouseover="onmoseoverchange4()" onmouseout="onmouseoutchange4()">
+                        <div class="topbrand">
+                            <p>GEOMETRIC PRINT SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 40% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit17.webp" alt="image not found" id="rare_rabbit5_topbrand_images"
+                            onmouseover="onmoseoverchange5()" onmouseout="onmouseoutchange5()">
+                        <div class="topbrand">
+                            <p>PAINT FLORAL PRINT SHIRTS</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 60% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit21.webp" alt="image not found" id="rare_rabbit6_topbrand_images"
+                            onmouseover="onmoseoverchange6()" onmouseout="onmouseoutchange6()">
+                        <div class="topbrand">
+                            <p>PAISLEY SHADE PRINTED SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 6 images for shirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit25.webp" alt="image not found" id="rare_rabbit7_topbrand_images"
+                            onmouseover="onmoseoverchange7()" onmouseout="onmouseoutchange7()">
+                        <div class="topbrand">
+                            <p>KNITSHADE MENS SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 65% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit29.webp" alt="image not found" id="rare_rabbit8_topbrand_images"
+                            onmouseover="onmoseoverchange8()" onmouseout="onmouseoutchange8()">
+                        <div class="topbrand">
+                            <p>KNIT SHAHDE MENS SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 34% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit33.webp" alt="image not found" id="rare_rabbit9_topbrand_images"
+                            onmouseover="onmoseoverchange9()" onmouseout="onmouseoutchange9()">
+                        <div class="topbrand">
+                            <p>CONTEMPORARY PRINT SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 20% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit37.webp" alt="image not found" id="rare_rabbit10_topbrand_images"
+                            onmouseover="onmoseoverchange10()" onmouseout="onmouseoutchange10()">
+                        <div class="topbrand">
+                            <p>LEAF SHADE PRINTED SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 28% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit41.webp" alt="image not found" id="rare_rabbit11_topbrand_images"
+                            onmouseover="onmoseoverchange11()" onmouseout="onmouseoutchange11()">
+                        <div class="topbrand">
+                            <p>ABSTRACT PRINT SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 25% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="rare_rabbit45.webp" alt="image not found" id="rare_rabbit12_topbrand_images"
+                            onmouseover="onmoseoverchange12()" onmouseout="onmouseoutchange12()">
+                        <div class="topbrand">
+                            <p>PAISLEY SHADE PRINT SHIRT</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 37% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const image_id1 = document.querySelector('#rare_rabbit1_topbrand_images');
+        const image_id2 = document.querySelector('#rare_rabbit2_topbrand_images');
+        const image_id3 = document.querySelector('#rare_rabbit3_topbrand_images');
+        const image_id4 = document.querySelector('#rare_rabbit4_topbrand_images');
+        const image_id5 = document.querySelector('#rare_rabbit5_topbrand_images');
+        const image_id6 = document.querySelector('#rare_rabbit6_topbrand_images');
+        const image_id7 = document.querySelector('#rare_rabbit7_topbrand_images');
+        const image_id8 = document.querySelector('#rare_rabbit8_topbrand_images');
+        const image_id9 = document.querySelector('#rare_rabbit9_topbrand_images');
+        const image_id10 = document.querySelector('#rare_rabbit10_topbrand_images');
+        const image_id11 = document.querySelector('#rare_rabbit11_topbrand_images');
+        const image_id12 = document.querySelector('#rare_rabbit12_topbrand_images');
+
+
+        let images1 = ["rare_rabbit2.webp", "rare_rabbit3.webp",
+            "rare_rabbit4.webp","rarerabbit1.webp"]
+        let images2 = [ "rare_rabbit6.webp", "rare_rabbit7.jpg",
+            "rare_rabbit8.jpg","rare_rabbit5.webp"]
+        let images3 = [ "rare_rabbit10.webp", "rare_rabbit11.webp",
+            "rare_rabbit12.webp","rare_rabbit9.webp"]
+        let images4 = [ "rare_rabbit14.webp", "rare_rabbit15.webp",
+            "rare_rabbit16.webp","rare_rabbit13.webp"]
+        let images5 = [ "rare_rabbit18.webp", "rare_rabbit19.webp",
+            "rare_rabbit20.webp","rare_rabbit17.webp"]
+        let images6 = [ "rare_rabbit22.webp", "rare_rabbit23.webp",
+            "rare_rabbit24.jpg","rare_rabbit21.webp"]
+        let images7 = [ "rare_rabbit26.webp", "rare_rabbit27.webp",
+            "rare_rabbit28.webp","rare_rabbit25.webp"]
+        let images8 = [ "rare_rabbit30.webp", "rare_rabbit31.webp",
+            "rare_rabbit32.jpg","rare_rabbit29.webp"]
+        let images9 = [ "rare_rabbit34.webp", "rare_rabbit35.webp",
+            "rare_rabbit36.webp","rare_rabbit33.webp"]
+        let images10 = [ "rare_rabbit38.webp", "rare_rabbit39.webp",
+            "rare_rabbit40.webp","rare_rabbit37.webp"]
+        let images11 = ["rare_rabbit42.webp", "rare_rabbit43.webp",
+            "rare_rabbit44.webp","rare_rabbit41.webp"]
+        let images12 = ["rare_rabbit46.webp", "rare_rabbit47.jpg",
+            "rare_rabbit48.webp","rare_rabbit45.webp"]
+
+        let index = 0;
+
+        // for first image 
+        var chnageimages1;
+
+        function changeimage1() {
+            image_id1.src = images1[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange1() {
+            chnageimages1 = setInterval(changeimage1, 2000);
+        }
+
+        function onmouseoutchange1() {
+            
+            clearInterval(chnageimages1);
+        }
+
+        // for second image 
+        var chnageimages2;
+
+        function changeimage2() {
+            image_id2.src = images2[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange2() {
+            chnageimages2 = setInterval(changeimage2, 2000);
+        }
+
+        function onmouseoutchange2() {
+            clearInterval(chnageimages2);
+        }
+
+        // for third image
+        var chnageimages3;
+
+        function changeimage3() {
+            image_id3.src = images3[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+
+        function onmoseoverchange3() {
+            chnageimages3 = setInterval(changeimage3, 2000);
+        }
+
+        function onmouseoutchange3() {
+            clearInterval(chnageimages3);
+        }
+
+        // for image4
+        var chnageimages4;
+
+        function changeimage4() {
+            image_id4.src = images4[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange4() {
+            chnageimages4 = setInterval(changeimage4, 2000);
+        }
+
+        function onmouseoutchange4() {
+            clearInterval(chnageimages4);
+        }
+
+        // for image5
+        var chnageimages5;
+
+        function changeimage5() {
+            image_id5.src = images5[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange5() {
+            chnageimages5 = setInterval(changeimage5, 2000);
+        }
+
+        function onmouseoutchange5() {
+            clearInterval(chnageimages5);
+        }
+
+        // for image 6
+        var chnageimages6;
+
+        function changeimage6() {
+            image_id6.src = images6[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange6() {
+            chnageimages6 = setInterval(changeimage6, 2000);
+        }
+
+        function onmouseoutchange6() {
+            clearInterval(chnageimages6);
+        }
+
+        // for image 7
+        var chnageimages7;
+
+        function changeimage7() {
+            image_id7.src = images7[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange7() {
+            chnageimages7 = setInterval(changeimage7, 2000);
+        }
+
+        function onmouseoutchange7() {
+            clearInterval(chnageimages7);
+        }
+
+        // for image 8
+        var chnageimages8;
+
+        function changeimage8() {
+            image_id8.src = images8[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange8() {
+            chnageimages8 = setInterval(changeimage8, 2000);
+        }
+
+        function onmouseoutchange8() {
+            clearInterval(chnageimages8);
+        }
+
+        // for images9
+        var chnageimages9;
+
+        function changeimage9() {
+            image_id9.src = images9[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange9() {
+            chnageimages9 = setInterval(changeimage9, 2000);
+        }
+
+        function onmouseoutchange9() {
+            clearInterval(chnageimages9);
+        }
+
+        // for image 10
+        var chnageimages10;
+
+        function changeimage10() {
+            image_id10.src = images10[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange10() {
+            chnageimages10 = setInterval(changeimage10, 2000);
+        }
+
+        function onmouseoutchange10() {
+            clearInterval(chnageimages10);
+        }
+
+        // for image 11
+
+        var chnageimages11;
+
+        function changeimage11() {
+            image_id11.src = images11[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange11() {
+            chnageimages11 = setInterval(changeimage11, 2000);
+        }
+
+        function onmouseoutchange11() {
+            clearInterval(chnageimages11);
+        }
+
+        // for images12
+        var chnageimages12;
+
+        function changeimage12() {
+            image_id12.src = images12[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange12() {
+            chnageimages12 = setInterval(changeimage12, 2000);
+        }
+
+        function onmouseoutchange12() {
+            clearInterval(chnageimages12);
+        }
+
+    </script>
+
+</body>
+
+</html>

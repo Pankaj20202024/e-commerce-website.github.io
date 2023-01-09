@@ -1,0 +1,3108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens container </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        .heading_container {
+            margin-bottom: 1%;
+            background: rgb(41, 40, 40, 0.70);
+
+        }
+
+        #header {
+            display: inline-block;
+            position: relative;
+            left: 43%;
+            height: 30px;
+            margin: 1%;
+        }
+
+        #header p {
+            color:white;
+            font-family: 'Baloo Bhai 2', cursive;
+            transition: all 0.3s ease-in-out;
+            font-size: 2.5rem;
+            position: relative;
+            top: -40px;
+        }
+
+        #header p:hover {
+
+            transform: scale(1.06);
+            cursor: pointer;
+
+        }
+
+        .main_container1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main_container1::before {
+            content: "";
+            position: absolute;
+            background: url(shopping4.webp) no-repeat center center/cover;
+            width: 100%;
+            height: 125%;
+            top: 0%;
+            left: 0%;
+            z-index: -1;
+            opacity: 0.90;
+        }
+
+        .mens_option_containeer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-content: center;
+            width: 15%;
+            height: 105vh;
+            overflow: auto;
+            scroll-behavior: smooth;
+            background: rgb(41, 40, 40, 0.70);
+            margin-right: 2%;
+        }
+
+        .mens_option_containeer h2 {
+            color: white;
+            font-family: 'Baloo Bhai 2', cursive;
+            position: relative;
+            left: 25%;
+        }
+
+        .buttons {
+            margin: 5%;
+            border: none;
+            font-size: 1.2rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            border-radius: 10%;
+            color: white;
+
+            background-color: rgb(30, 144, 255, 0.1);
+        }
+
+        .buttons:hover {
+            transform: scale(1.09);
+            color: white;
+            cursor: pointer;
+        }
+
+
+
+        /* css code for container contaning image for men items  */
+
+        .container_switcher {
+            width: 73%;
+            background: rgb(41, 40, 40, 0.70);
+            height: 105vh;
+            margin-left: 1%;
+        }
+
+        .container_for_images_of_innner_content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+            height: 100vh;
+            overflow: auto;
+            scroll-behavior: smooth;
+            margin-right: 1%;
+        }
+        
+
+        .divs_for_putting_images {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+
+        .image_for_inner_content {
+            min-width: 220px;
+            height: 250px;
+            margin: 1.3%;
+        }
+
+        .image_for_inner_content img {
+            border: 2px solid white;
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .image_for_inner_content img:hover {
+            transform: scale(1.06);
+        }
+
+
+        /* css code for putting the discount and name of the brand  */
+
+        .topbrand {
+            position: relative;
+            left: 0.5%;
+            top: -22.62%;
+            background-color: rgb(41, 40, 40, 0.70);
+            font-size: 1.3rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            border-radius: 5%;
+            cursor: pointer;
+            color: white;
+        }
+
+        .topbrand_discount {
+            position: relative;
+            left: 42%;
+            top: -130%;
+            background-color: rgb(41, 40, 40, 0.70);
+            font-size: 0.7rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            border-radius: 15%;
+            width: 55%;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* for expert view container  */
+
+        #container_expert_view_launcher {
+            width: 5%;
+            height: 100vh;
+            margin-right: 2%;
+        }
+
+        .expert_view {
+            background-color: #001440;
+            font-family: 'Baloo Bhai 2', cursive;
+            width: 18%;
+            height: 8vh;
+            text-align: center;
+            color: white;
+            transform: rotate(90deg);
+            position: fixed;
+            right: -4%;
+            top: 36%;
+            cursor: pointer;
+            border-radius: 5%;
+            border: none;
+            font-size: 1.3rem;
+        }
+
+        .expert_view:hover {
+            background-color: #001440;
+            box-shadow: 0 0 5px #1145b6;
+        }
+
+        /* conversatation container  */
+        #container_for_expert_view {
+            width: 68%;
+            height: 100vh;
+            background: rgb(41, 40, 40, 0.70);
+            margin-left: -2%;
+
+        }
+
+        #cross_button {
+            position: absolute;
+            width: 4%;
+            top: 25%;
+            right: 15%;
+        }
+
+        #cross_button:hover {
+            transform: scale(1.08);
+            cursor: pointer;
+        }
+
+        #cross_button img {
+            width: 100%;
+            height: 100%;
+            filter: invert(100%);
+        }
+
+
+        #container_for_expert_view p {
+            font-size: 1.5rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            text-align: center;
+        }
+
+
+        #conversatoin_container {
+            background-color: rgb(255, 255, 255, 0.6);
+            width: 80%;
+            height: 65vh;
+            position: relative;
+            left: 10%;
+            border: 5%;
+
+        }
+
+        #for_query {
+
+            position: relative;
+            top: 1%;
+            left: 15%;
+        }
+
+        #for_query input {
+            font-size: 1.3rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: #001440;
+            width: 50%;
+            margin: 2%;
+            border: 2xp solid white;
+            transition: all 0.3s ease-in-out;
+            text-align: center;
+            border-radius: 5%;
+        }
+        #for_query input:focus{
+            outline: none;
+            border: 3px solid #001440;
+            box-shadow: 0 0 5px #001440; 
+        }
+
+        #for_query input:hover {
+            cursor: pointer;
+            transform: scale(1.02);
+        }
+
+        #for_query button {
+            font-size: 1.3rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: white;
+            border-radius: 10%;
+            border: 3px solid #001440;
+            background-color: #001440;
+            margin: 2%;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #for_query button:hover {
+            transform: scale(1.06);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="heading_container">
+        <div id="header">
+            <p>Men's Section </p>
+        </div>
+    </div>
+    <div class="main_container1">
+
+        <div class="mens_option_containeer">
+            <h2>Category</h2>
+            <button class="buttons" id="btn1" onclick="show_shirt()" onmouseover="show_hover()">Shirts</button>
+            <button class="buttons" id="btn2" onclick="show_tshirt()" onmouseover="show_hover()">Tshirts</button>
+            <button class="buttons" id="btn3" onclick="show_sweater()" onmouseover="show_hover()">Sweaters</button>
+            <button class="buttons" id="btn4" onclick="show_jacket()" onmouseover="show_hover()">Jackets</button>
+            <button class="buttons" id="btn5" onclick="show_capree()" onmouseover="show_hover()">Capree</button>
+            <button class="buttons" id="btn6" onclick="show_cargo()" onmouseover="show_hover()">Cargo</button>
+            <button class="buttons" id="btn7" onclick="show_jeans()" onmouseover="show_hover()">Jeans</button>
+            <button class="buttons" id="btn8" onclick="show_formal_suits()" onmouseover="show_hover()">Formal
+                Suit</button>
+            <button class="buttons" id="btn9" onclick="show_shoose()" onmouseover="show_hover()">Shoose</button>
+            <button class="buttons" id="btn10" onclick="show_fromal_shoose()" onmouseover="show_hover()">Formal
+                Shoose</button>
+            <button class="buttons" id="btn11" onclick="show_sandel()" onmouseover="show_hover()">Sandels</button>
+            <button class="buttons" id="btn12" onclick="show_sleeper()" onmouseover="show_hover()">Sleepers</button>
+            <button class="buttons" id="btn13" onclick="show_lower()" onmouseover="show_hover()">Lower</button>
+            <button class="buttons" id="btn14" onclick="show_uppers()" onmouseover="show_hover()">Uppers</button>
+            <button class="buttons" id="btn15" onclick="show_gadgets()" onmouseover="show_hover()">Gadgets</button>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher1">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for shirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="shirt1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 50% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt3.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 70% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt4.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for shirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="shirt5.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 62% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for shirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="shirt9.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 73% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt10.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 82% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt11.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 23% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="shirt12.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 33% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher2">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for tshirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="tshirts1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 58% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 65% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt3.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 32% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for tshirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="tshirt5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 75% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 78% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 60% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for tshirt  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="tshirt9.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 62% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt10.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt11.png" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 72% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="tshirt12.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 46% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher3">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for sweater  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sweater1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater3.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater4.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 52% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for sweater  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sweater5.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 63% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 72% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for sweater  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sweater9.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater10.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater11.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sweater12.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher4">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for jackets  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="jacket1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket3.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for jacket  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="jacket5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 78% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 44% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 51% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for jacket  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="jacket9.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket10.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 58% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket11.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jacket12.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 41% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher5">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for capree  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="capree1.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree2.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree3.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 51% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for capree  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="capree5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 57% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree6.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 42% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree7.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 76% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree8.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 78% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for capree  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="capree9.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree10.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 50% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree11.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="capree12.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_switcher" id="main_container_switcher6">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for cargo  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="cargo1.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo2.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo3.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 40% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+                <!-- next 4 images for cargo  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="cargo5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo6.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 47% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo7.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo8.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 72% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for cargo  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="cargo9.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 51% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo10.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo11.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 42% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="cargo12.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 31% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher7">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for jeans -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy2.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy3.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 42% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 57% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for jeans  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy6.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 72% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy7.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 63% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for jeans  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy9.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 65% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy10.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 73% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy11.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 82% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="jeansimageforboy12.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 72% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_switcher" id="main_container_switcher8">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for formal suit -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 44% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit3.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 49% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit4.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 69% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for formal suit  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit5.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 59% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 39% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 47% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 72% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for fromal suit   -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit9.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 52% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit10.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 68% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit11.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lev's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 73% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_suit12.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 46% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="container_switcher" id="main_container_switcher9">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for shoose -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Reebok</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Adidas</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 54% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen3.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Nike</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen4.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Puma</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 51% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for shoose  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen5.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Woodland</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Bata</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 78% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Red Tape</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 34% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Fila</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for shoose   -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen9.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee Cooper</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 44% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen10.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Clarks</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen11.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Seeandwear</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 78% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="footwearformen12.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Hush Puppies</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 49% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_switcher" id="main_container_switcher10">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for formal shoose -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Reebok</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Adidas</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 78% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men3.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Nike</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="fromal_shoose_fro_men4.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Puma</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 44% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for formal shoose  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men5.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Woodland</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Bata</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 68% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Red Tape</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Fila</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 32% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for fromal shoose   -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men9.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee Cooper</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men10.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Clarks</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 77% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men11.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Seeandwear</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 72% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="formal_shoose_for_men12.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Hush Puppies</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 34% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container_switcher" id="main_container_switcher11">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for sandel -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men1.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Reebok</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men2.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Adidas</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men3.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Nike</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Puma</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 53% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for sandel  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Woodland</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 74% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men6.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Bata</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men7.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Red Tape</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men8.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Fila</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for sandel  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men9.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee Cooper</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 25% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men10.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Clarks</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 44% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men11.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Seeandwear</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 77% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sande_for_men12.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Hush Puppies</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container_switcher" id="main_container_switcher12">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for sleeper -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sleppers1.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Reebok</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sleppers2.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Adidas</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sleppers3.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Nike</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 40% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sleppers4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Puma</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for slepper  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sleppers5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Woodland</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 25% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sleppers6.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Bata</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sleppers7.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Red Tape</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sleppers8.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Fila</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 63% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for sleeper  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="sleppers9.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee Cooper</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="sleppers10.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Clarks</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 68% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="slepper11.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Seeandwear</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="slepper12.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Hush Puppies</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 62% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_switcher" id="main_container_switcher13">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for lower -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="lower1.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower2.png" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower3.png" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 68% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower4.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 36% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for lower  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="lower5.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 64% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower6.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 64% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower7.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 33% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower8.png" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for lower  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="lower9.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 73% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower10.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower11.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 37% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="lower12.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 75% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_switcher" id="main_container_switcher14">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for upper -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="upper1_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Arrow</p> 
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 51% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper2_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Peter England</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 75% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper3_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Van Heusen</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper4_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Louis Phillipe</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for upper  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="upper5_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>John Players</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper6_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Zodiac</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 77% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper7_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Park Avenue</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper8_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Parx</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for upper  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="upper9_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Wills Lifestyle</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 35% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper10_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Allen Solly</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper11_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Levi's</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 64% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="upper12_for_men.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Lee 404</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 54% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher15">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images for gadget -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="gadget1.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Apple</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 34% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget2.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Sony</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 55% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget3.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Apple</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget4.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Sony</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 76% Off</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for gadget  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="gadget5.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Apple</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 49% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget6.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Sony</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget7.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Apple</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget8.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Sony</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 4 images for gadget  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="gadget15.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Apple</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 36% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget16.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Sony</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget17.webp" alt="image not found">
+                        <div class="topbrand">
+                            <p>Apple</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 44% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="gadget13.jpg" alt="image not found">
+                        <div class="topbrand">
+                            <p>Sony</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 53% Off<br> + For Him</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container_expert_view_launcher">
+            <button class="expert_view" onclick="show_expert_view()">
+                Ask Question
+            </button>
+        </div>
+
+        <div id="container_for_expert_view">
+            <p>Dear customer I'm your Personal Assistant.</p>
+            <p>Please ask your query</p>
+            <div id="cross_button" onclick="show_home_screen()">
+                <img src="close.png" alt="image not found">
+            </div>
+            <div id="conversatoin_container">
+
+            </div>
+            <div id="for_query">
+                <input type="text" placeholder="Write Your Query Here ">
+                <button> Submit</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        // variable for changing the background color of button
+        var topwear_button1 = document.getElementById("btn1");//for shirt
+        var topwear_button2 = document.getElementById("btn2");//for tshirt
+        var topwear_button3 = document.getElementById("btn3");//for sweater
+        var topwear_button4 = document.getElementById("btn4");//for Jackets
+        var topwear_button5 = document.getElementById("btn5");//for Capree
+        var topwear_button6 = document.getElementById("btn6");//for Cargo
+        var topwear_button7 = document.getElementById("btn7");//for Jeans
+        var topwear_button8 = document.getElementById("btn8");//for Formal Suit
+        var topwear_button9 = document.getElementById("btn9");//for Shoose
+        var topwear_button10 = document.getElementById("btn10");//for Formal Shoose
+        var topwear_button11 = document.getElementById("btn11");//for Sandels
+        var topwear_button12 = document.getElementById("btn12");//for Sleepers
+        var topwear_button13 = document.getElementById("btn13");//for Lower
+        var topwear_button14 = document.getElementById("btn14");//for Uppers
+        var topwear_button15 = document.getElementById("btn15");//for Gadgets
+
+
+
+        topwear_button1.style.backgroundColor = "#001440";
+        topwear_button1.style.boxShadow = " 0 0 5px #1145b6";
+
+        // variable for switching the container for choices of mens 
+
+        // variable for shirt container
+        var selector_for_shirt_for_mens = document.getElementById("main_container_switcher1");
+
+        // variable for tshirt container
+        var selector_for_tshirt_for_men = document.getElementById("main_container_switcher2");
+        selector_for_tshirt_for_men.style.display = "none";
+        // variable for sweater container
+        var selector_for_sweater_for_men = document.getElementById("main_container_switcher3");
+        selector_for_sweater_for_men.style.display = "none";
+        // variable for jackets container 
+        var selector_for_jacket_for_men = document.getElementById("main_container_switcher4");
+        selector_for_jacket_for_men.style.display = "none";
+        // variable for capree container 
+        var selector_for_capree_for_men = document.getElementById("main_container_switcher5");
+        selector_for_capree_for_men.style.display = "none";
+        // vaiable for cargo contianer 
+        var selector_for_cargo_for_men = document.getElementById("main_container_switcher6");
+        selector_for_cargo_for_men.style.display = "none";
+        // variable for jeans container 
+        var selector_for_jeans_for_men = document.getElementById("main_container_switcher7");
+        selector_for_jeans_for_men.style.display = "none";
+        // variable for fromal suit container 
+        var selector_for_formal_suit_for_men = document.getElementById("main_container_switcher8");
+        selector_for_formal_suit_for_men.style.display = "none";
+        // variable for shoose container 
+        var selector_for_shoose_for_men = document.getElementById("main_container_switcher9");
+        selector_for_shoose_for_men.style.display = "none";
+        // variable for fromal shoose container 
+        var selector_for_fromal_shoose_for_men = document.getElementById("main_container_switcher10");
+        selector_for_fromal_shoose_for_men.style.display = "none";
+        // variable for sandel container 
+        var selector_for_sandel_for_men = document.getElementById("main_container_switcher11");
+        selector_for_sandel_for_men.style.display = "none";
+        // variable for sleeper container 
+        var selector_for_sleppers_for_men = document.getElementById("main_container_switcher12");
+        selector_for_sleppers_for_men.style.display = "none";
+        // variable for lower container 
+        var selector_for_lower_for_men = document.getElementById("main_container_switcher13");
+        selector_for_lower_for_men.style.display = "none";
+        // variable for upper container 
+        var selector_for_upper_for_men = document.getElementById("main_container_switcher14");
+        selector_for_upper_for_men.style.display = "none";
+        // variable for gadget container 
+        var selector_for_gadget_for_men = document.getElementById("main_container_switcher15");
+        selector_for_gadget_for_men.style.display = "none";
+        //variable for expert container 
+        var selector_for_expert_container = document.getElementById("container_for_expert_view");
+        selector_for_expert_container.style.display = "none";
+
+        function show_shirt() {
+            selector_for_shirt_for_mens.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+
+            topwear_button1.style.backgroundColor = "#001440";
+            topwear_button1.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+
+        }
+
+        function show_tshirt() {
+            selector_for_tshirt_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+
+            topwear_button2.style.backgroundColor = "#001440";
+            topwear_button2.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+        }
+
+        function show_sweater() {
+            selector_for_sweater_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+
+            topwear_button3.style.backgroundColor = "#001440";
+            topwear_button3.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+        }
+
+        function show_jacket() {
+            selector_for_jacket_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+
+            topwear_button4.style.backgroundColor = "#001440";
+            topwear_button4.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+        }
+
+        function show_capree() {
+            selector_for_capree_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+
+            topwear_button5.style.backgroundColor = "#001440";
+            topwear_button5.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+        }
+        function show_cargo() {
+            selector_for_cargo_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+
+            topwear_button6.style.backgroundColor = "#001440";
+            topwear_button6.style.boxShadow = "0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+        }
+
+        function show_jeans() {
+            selector_for_jeans_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+
+            topwear_button7.style.backgroundColor = "#001440";
+            topwear_button7.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = " none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+        }
+
+        function show_formal_suits() {
+            selector_for_formal_suit_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+            topwear_button8.style.backgroundColor = "#001440";
+            topwear_button8.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+        }
+        function show_shoose() {
+            selector_for_shoose_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+            topwear_button9.style.backgroundColor = "#001440";
+            topwear_button9.style.boxShadow = " 0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+        }
+
+        function show_fromal_shoose() {
+            selector_for_fromal_shoose_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+
+            topwear_button10.style.backgroundColor = "#001440";
+            topwear_button10.style.boxShadow = "0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+        }
+
+        function show_sandel() {
+            selector_for_sandel_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+            topwear_button11.style.backgroundColor = "#001440";
+            topwear_button11.style.boxShadow = "0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+        }
+        function show_sleeper() {
+            selector_for_sleppers_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+
+            topwear_button12.style.backgroundColor = "#001440";
+            topwear_button12.style.boxShadow = "0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+        }
+
+        function show_lower() {
+            selector_for_lower_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+            topwear_button13.style.backgroundColor = "#001440";
+            topwear_button13.style.boxShadow = "0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+        }
+
+        function show_uppers() {
+            selector_for_upper_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+            topwear_button14.style.backgroundColor = "#001440";
+            topwear_button14.style.boxShadow = "0 0 5px #1145b6";
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+        }
+
+        function show_gadgets() {
+            selector_for_gadget_for_men.style.display = "block";
+            selector_for_expert_container.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+            topwear_button15.style.backgroundColor = "#001440";
+            topwear_button15.style.boxShadow = "0 0 5px #1145b6";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+        }
+
+
+
+        function show_expert_view() {
+            selector_for_expert_container.style.display = "block";
+            selector_for_gadget_for_men.style.display = "none";
+            selector_for_upper_for_men.style.display = "none";
+            selector_for_lower_for_men.style.display = "none";
+            selector_for_sleppers_for_men.style.display = "none";
+            selector_for_fromal_shoose_for_men.style.display = "none";
+            selector_for_sandel_for_men.style.display = "none";
+            selector_for_shoose_for_men.style.display = "none";
+            selector_for_formal_suit_for_men.style.display = "none";
+            selector_for_jeans_for_men.style.display = "none";
+            selector_for_cargo_for_men.style.display = "none";
+            selector_for_capree_for_men.style.display = "none";
+            selector_for_jacket_for_men.style.display = "none";
+            selector_for_sweater_for_men.style.display = "none";
+            selector_for_shirt_for_mens.style.display = "none";
+            selector_for_tshirt_for_men.style.display = "none";
+
+            topwear_button15.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button15.style.boxShadow = "none";
+            topwear_button14.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button14.style.boxShadow = "none";
+            topwear_button13.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button13.style.boxShadow = "none";
+            topwear_button12.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button12.style.boxShadow = "none";
+            topwear_button11.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button11.style.boxShadow = "none";
+            topwear_button10.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button10.style.boxShadow = "none";
+            topwear_button9.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button9.style.boxShadow = "none";
+            topwear_button8.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button8.style.boxShadow = "none";
+            topwear_button7.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button7.style.boxShadow = "none";
+            topwear_button6.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button6.style.boxShadow = "none";
+            
+            topwear_button5.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button5.style.boxShadow = "none";
+            topwear_button4.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button4.style.boxShadow = "none";
+            topwear_button1.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button1.style.boxShadow = "none";
+            topwear_button2.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button2.style.boxShadow = "none";
+            topwear_button3.style.backgroundColor = "rgb(30,144,255,0.1)";
+            topwear_button3.style.boxShadow = "none";
+        }
+
+        function show_home_screen() {
+            show_shirt();
+        }
+
+    </script>
+</body>
+
+</html>

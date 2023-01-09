@@ -1,0 +1,1445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: rgb(255, 240, 220);
+}
+
+
+
+#navbar {
+    background-color: rgb(41, 40, 40);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    box-shadow: 0 0 10px 3px #91a9e2;
+    z-index: 94;
+}
+
+
+
+#navbar .logo {
+
+    margin: 1%;
+    padding: 1%;
+    margin-left: 0%;
+    font-family: 'Bree Serif', serif;
+}
+
+#navbar .logo h3 {
+    font-size: 1.6rem;
+}
+
+#navbar .logo a {
+    text-decoration: none;
+}
+
+#navbar .logo a:hover {
+    cursor: pointer;
+    color: #ff3c78;
+}
+
+
+#navbar .Listcontent {
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    margin-left: 3%;
+    list-style: none;
+}
+
+#navbar .Listcontent a {
+    text-decoration: none;
+    border-radius: 10%;
+    transition: 0.5s;
+    padding: 4px;
+}
+
+#navbar .Listcontent a:hover {
+    background-color: #ff3c78;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 0 5px #fda7c1;
+}
+
+
+#navbar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    list-style: none;
+
+}
+
+#navbar ul li {
+
+    font-size: 1.1rem;
+    line-height: 2rem;
+    width: 100%;
+    padding: 2.1%;
+
+}
+
+#navbar ul li a {
+    font-family: 'Bree Serif', serif;
+    text-decoration: none;
+}
+
+.dropdown {
+    position: absolute;
+    top: 71%;
+    width: 18%;
+}
+
+.dropdown li {
+    display: none;
+    background-color: rgb(41, 40, 40);
+
+}
+
+.dropdown .space {
+    margin-top: 9%;
+    margin-bottom: 0%;
+}
+
+#navbar li:hover .dropdown li {
+    display: block;
+    box-shadow: 0 10px 6px -6px #91a9e2;
+}
+
+#navbar li:hover .dropdown {
+    perspective: 1000px;
+}
+
+#navbar li:hover .dropdown li {
+    transform-style: top left;
+    opacity: 0;
+}
+
+#navbar li:hover .dropdown li:nth-child(1) {
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: -150ms;
+}
+
+#navbar li:hover .dropdown li:nth-child(2) {
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 0ms;
+}
+
+#navbar li:hover .dropdown li:nth-child(3) {
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: -150ms;
+}
+
+#navbar li:hover .dropdown li:nth-child(4) {
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 150ms;
+}
+
+#navbar li:hover .dropdown li:nth-child(5) {
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 350ms;
+}
+
+#navbar li:hover .dropdown li:nth-child(6) {
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 450ms;
+}
+
+#navbar li:hover .dropdown li:nth-child(7) {
+    animation: animate 300ms ease-in-out forwards;
+    animation-delay: 600ms;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotateZ(90deg);
+    }
+
+    0% {
+        transform: skewX(10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateZ(0deg);
+    }
+}
+
+#navbar input {
+    width: 25%;
+    height: 10%;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-left: 1.5%;
+    text-align: center;
+    color: #ff3c78;
+    transition: 0.5s;
+}
+#navbar input:focus{
+    outline: none;
+    border: 3px solid #ff3c78;
+    box-shadow: 0 0 5px #fda7c1; 
+}
+
+#navbar input:hover {
+    cursor: pointer;
+}
+
+#navbar #image1 {
+    width: 2%;
+    height: 25%;
+    position: absolute;
+    top: 38%;
+    right: 40%;
+    margin-left: 2%;
+}
+
+#navbar #image1:hover {
+    cursor: pointer;
+
+}
+
+#navbar #image2 {
+    width: 4%;
+    height: 55%;
+    position: absolute;
+    right: 11%;
+    margin-left: 2%;
+    filter: invert(100%);
+    transition: 0.5s;
+    border-radius: 10%;
+}
+
+#navbar #image2:hover {
+    cursor: pointer;
+    background-color: #00b975;
+    box-shadow: 0 0 5px #fda7c1;
+}
+
+
+#navbar #image3 {
+    width: 4%;
+    height: 55%;
+    position: absolute;
+    right: 6%;
+    margin-left: 2%;
+    filter: invert(100%);
+    transition: 0.5s;
+    border-radius: 10%;
+}
+
+#navbar #image3:hover {
+    cursor: pointer;
+    background-color: #00b975;
+    box-shadow: 0 0 5px #fda7c1;
+}
+
+
+#navbar #image4 {
+    width: 3.6%;
+    height: 55%;
+    position: absolute;
+    right: 1%;
+    margin-left: 2%;
+    filter: invert(100%);
+    transition: 0.5s;
+    padding: 8px;
+     border-radius: 10%;
+}
+
+#navbar #image4:hover {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #00b975;
+    box-shadow: 0 0 5px #fda7c1;
+}
+
+/* sectioin1  */
+
+.section1 {
+
+    background-color: rgb(41, 40, 40);
+    margin-top: 8%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.section1 #sales1 {
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    width: 18%;
+
+    align-items: center;
+    align-content: center;
+}
+
+/* block 1 */
+
+.section1 #sales1 a {
+    text-decoration: none;
+}
+
+.section1 #sales1 #button {
+    margin: 10%;
+    margin-left: -8%;
+    border: 3px solid #ff3c78;
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 2%;
+    width: 110%;
+    color: #ff3c78;
+    border-radius: 10%;
+    background-color: bisque;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out .1s;
+
+}
+
+
+.section1 #sales1 #button:hover {
+    color: white;
+    background-color: #ff3c78;
+    cursor: pointer;
+    transform: scale(1.06);
+    box-shadow: 0 0 5px #fda7c1;
+}
+
+
+.section1 #sales2 {
+    display: flex;
+    flex-direction: column;
+    left: 0%;
+    width: 18%;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    left: 82%;
+}
+
+.section1 #sales2 a {
+    text-decoration: none;
+}
+
+.section1 #sales2 #button {
+    margin: 10%;
+    margin-left: -4%;
+    border: 3px solid #ff3c78;
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 2%;
+    width: 110%;
+    color: #ff3c78;
+    border-radius: 10%;
+    background-color: bisque;
+    font-size: 2rem;
+    transition: all 0.5s ease-in-out .1s;
+
+}
+
+.section1 #sales2 #button:hover {
+    color: white;
+    background-color: #ff3c78;
+    cursor: pointer;
+    transform: scale(1.06);
+    box-shadow: 0 0 5px #fda7c1;
+}
+
+
+/* men image  */
+#MenImage {
+
+    margin-left: -1.8%;
+    width: 31%;
+
+}
+
+#MenImage img {
+
+    width: 100%;
+}
+
+#WomenImage {
+
+    width: 30%;
+    margin-left: 11.3%;
+}
+
+#WomenImage img {
+
+    width: 84%;
+}
+
+.special_offer {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    left: 44.5%;
+    top: 43.5%;
+    margin-top: 2.5%;
+}
+
+.special_offer :hover {
+    color: #ff3c78;
+}
+
+.special_offer h1 {
+    /* border: 2px solid purple; */
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    margin-top: 2%;
+}
+
+.special_offer h2 {
+    font-size: 2.2rem;
+    margin-top: 2%;
+}
+
+.special_offer h3 {
+    font-size: 1.5rem;
+    margin-top: 2%;
+}
+
+.special_offer #specialofferbutton {
+    margin: 7%;
+    margin-top: 15%;
+    border: 3px solid #ff3c78;
+    font-family: 'Baloo Bhai 2', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 2%;
+    width: 70%;
+    color: #ff3c78;
+    border-radius: 10%;
+    background-color: bisque;
+    font-size: 1.4rem;
+    transition: all 0.5s ease-in-out .1s;
+}
+
+.special_offer #specialofferbutton:hover {
+    color: white;
+    background-color: #ff3c78;
+    cursor: pointer;
+    transform: scale(1.06);
+    box-shadow: 0 0 5px #fda7c1;
+}
+
+
+/* section2  */
+
+#section2 {
+    background-color: rgb(41, 40, 40);
+    margin-top: 5%;
+}
+
+#section2 h1 {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.5rem;
+    position: relative;
+    left: 46%;
+}
+
+.main_container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.main-scroll-div {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.cover {
+    /* border: 2px solid green ; */
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.cover::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    z-index: 90;
+    height: 96%;
+    width: 120px;
+    background-image: linear-gradient(90deg, rgb(80, 78, 78), transparent);
+
+}
+
+.cover::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: 90;
+    height: 96%;
+    width: 120px;
+    background-image: linear-gradient(-90deg, rgb(80, 78, 78), transparent);
+}
+
+.scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+
+}
+
+.child {
+    min-width: 350px;
+    height: 350px;
+    margin: 1px 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.child .topbrandname {
+    color: white;
+    position: relative;
+    background-color: rgb(41, 40, 40, 0.5);
+    top: -19%;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    width: 100%;
+}
+
+.child .topbrandname p {
+    font-size: 1.5rem;
+}
+
+.discount {
+    color: white;
+    position: relative;
+    background-color: rgb(41, 40, 40, 0.5);
+    top: -118%;
+    left: 28%;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 1%;
+    border-radius: 20%;
+}
+
+
+.scroll-images::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.child-img {
+    width: 100%;
+    height: 100%;
+}
+
+.icon {
+    width: 80%;
+    outline: none;
+    border: none;
+    background: none;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+
+.icon:hover {
+    transform: scale(1.06);
+
+}
+
+.icon img {
+    width: 100%;
+    filter: invert(100%);
+}
+
+/*  section3  */
+
+#section3 {
+    background-color: rgb(41, 40, 40);
+    margin-top: 5%;
+}
+
+#section3 h1 {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.5rem;
+    position: relative;
+    left: 43.5%;
+}
+
+.child .topcategories {
+    color: white;
+    position: relative;
+    background-color: rgb(41, 40, 40, 0.5);
+    top: -10%;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    width: 100%;
+}
+
+.child .topcategories p {
+    font-size: 1.5rem;
+}
+
+.discount2 {
+    color: white;
+    position: relative;
+    background-color: rgb(41, 40, 40, 0.5);
+    top: -107%;
+    left: 28%;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 1%;
+    border-radius: 20%;
+}
+
+
+
+/* section4 */
+
+#section4 {
+    background-color: rgb(41, 40, 40);
+    margin-top: 5%;
+}
+
+#section4 h1 {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.5rem;
+    position: relative;
+    left: 40.99%;
+}
+
+.child .shopbycategory {
+    color: white;
+    position: relative;
+    background-color: rgb(41, 40, 40, 0.5);
+    top: -10%;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    width: 100%;
+}
+
+.child .shopbycategory p {
+    font-size: 1.5rem;
+}
+
+.discount3 {
+    color: white;
+    position: relative;
+    background-color: rgb(41, 40, 40, 0.5);
+    top: -109%;
+    left: 28%;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    padding: 1%;
+    border-radius: 20%;
+}
+
+
+
+/* login or singup form  */
+#forms_main_container {
+    background-color: rgb(54, 52, 52, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 19.4%;
+    border-radius: 5%;
+    border: 2px solid white;
+}
+
+#scroll_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.login_or_singup_button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+
+}
+
+.login_singup_button {
+    text-align: center;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1%;
+    font-family: 'Bree Serif', serif;
+}
+
+.login_singup_button:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+}
+
+
+#switch1 {
+    position: relative;
+    left: -20%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+#switch2 {
+    position: relative;
+    right: -25%;
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+
+#underline1 {
+    border: 3px solid #ff3c78;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#underline2 {
+    border: 3px solid #ff3c78;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    left: -6%;
+    display: none;
+}
+
+#div_forms {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#form_div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#form_div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    display: none;
+}
+
+.common_forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.common_forms input {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    color: #ff3c78;
+    background-color: white;
+    margin: 3%;
+    border-radius: 8%;
+}
+
+.common_forms input:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+    border: 2px solid #ff3c78;
+}
+
+.common_forms #password:hover {
+    cursor: pointer;
+    transform: scale(1.06);
+    border: 2px solid #ff3c78;
+}
+
+.common_forms #SingUpButton {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(255, 234, 206);
+    border-radius: 10%;
+    border: 2px solid #ff3c78;
+    padding: 1%;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.common_forms #SingUpButton:hover {
+    background-color: #ff3c78;
+    color: white;
+    box-shadow: 0 0 4px #fda7c1;
+}
+
+.common_forms #LoginUpButton {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: rgb(255, 234, 206);
+    border-radius: 10%;
+    border: 2px solid #ff3c78;
+    padding: 1%;
+    transition: all 0.3s ease-in-out 0.1s;
+}
+
+.common_forms #LoginUpButton:hover {
+    background-color: #ff3c78;
+    color: white;
+    box-shadow: 0 0 4px #fda7c1;
+}
+
+#cross button {
+    width: 10%;
+    background: none;
+    border: none;
+    position: relative;
+    left: 105%;
+    margin-top: 2%;
+    margin-left: -2%;
+    cursor: pointer;
+
+}
+
+#cross button:hover {
+    transform: scale(1.06);
+}
+
+#cross button img {
+    width: 100%;
+    filter: invert(1);
+}
+
+/* wishlist  */
+
+#wish_list_main_container {
+    background-color: rgb(54, 52, 52, 0.5);
+    width: 100%;
+    position: absolute;
+    left: 25%;
+    top: 19.4%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+}
+
+
+#login_before_wishlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    display: none;
+}
+
+#login_before_wishlist h1 {
+    font-size: 1.6rem;
+    font-family: 'Bree Serif', serif;
+    color: white;
+    margin: 3%;
+}
+
+#login_before_wishlist h2 {
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    margin: 3%;
+}
+
+#login_before_wishlist img {
+    width: 15%;
+    margin: 3%;
+}
+
+#login_before_wishlist button {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #ff3c78;
+    background-color: rgb(255, 234, 206);
+    border-radius: 10%;
+    border: 2px solid #ff3c78;
+    padding: 0.3%;
+    margin: 1%;
+    transition: all 0.3s ease-in-out 0.1s;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#login_before_wishlist button:hover {
+    background-color: #ff3c78;
+    color: white;
+    box-shadow: 0 0 4px #fda7c1;
+    cursor: pointer;
+}
+
+#cross2 button {
+    width: 10%;
+    background: none;
+    border: none;
+    position: relative;
+    left: 105%;
+    margin-top: 2%;
+    margin-left: -2%;
+    cursor: pointer;
+    display: flex;
+}
+
+#cross2 button:hover {
+    transform: scale(1.06);
+}
+
+#cross2 button img {
+    width: 100%;
+    filter: invert(1);
+}
+
+/* Add to cart */
+
+#Add_to_cart_container {
+    background-color: rgb(54, 52, 52, 0.5);
+    width: 100%;
+    position: absolute;
+    left: 25%;
+    top: 19.4%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 50%;
+    border: 2px solid white;
+}
+
+#cross3 button {
+    width: 10%;
+    background: none;
+    border: none;
+    position: relative;
+    left: 105%;
+    margin-top: 2%;
+    margin-left: -2%;
+    cursor: pointer;
+    display: flex;
+}
+
+#cross3 button:hover {
+    transform: scale(1.06);
+}
+
+#cross3 button img {
+    width: 100%;
+    filter: invert(1);
+}
+
+#Add_to_cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-top: 4%;
+}
+
+#process_for_buying {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 10%;
+    position: relative;
+    left: -10%;
+}
+
+.divs_for_process_for_buying {
+    margin-right: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+.divs_for_process_for_buying h2 {
+    cursor: pointer;
+    font-family: 'Bree Serif', serif;
+}
+
+
+
+#switching_option {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+#underline1_for_bag {
+    border: 3px solid #ff3c78;
+    width: 190%;
+    margin-top: 5%;
+}
+
+#underline2_for_bag {
+    border: 3px solid #ff3c78;
+    width: 107%;
+    display: none;
+    margin-top: 5%;
+}
+
+#underline3_for_bag {
+    border: 3px solid #ff3c78;
+    width: 107%;
+    display: none;
+    margin-top: 5%;
+}
+
+#for_bag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+}
+
+#switching_option #address {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#switching_option #address form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+#switching_option #address input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #ff3c78;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+    margin: 1%;
+    width: 190%;
+}
+
+
+
+#switching_option #address input:hover {
+    border: 2px solid #ff3c78;
+    cursor: pointer;
+    border-radius: 3%;
+    transform: scale(1.06);
+}
+
+#Add_to_cart img {
+    width: 30%;
+    filter: invert(1);
+}
+
+#Add_to_cart button {
+    border: 2px solid #ff3c78;
+    color: #ff3c78;
+    background-color: antiquewhite;
+    font-family: 'Baloo Bhai 2', cursive;
+    cursor: pointer;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    border-radius: 10%;
+    font-size: 1.2rem;
+    padding: 1%;
+}
+
+#Add_to_cart button:hover {
+    transform: scale(1.06);
+    background-color: #ff3c78;
+    box-shadow: 0 0 4px #fda7c1;
+    color: white;
+}
+
+footer {
+    margin-top: 5%;
+    background-color: rgb(41, 40, 40);
+}
+
+#center {
+    position: relative;
+    left: 35%;
+    font-size: 1rem;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+
+
+
+
+/* code for inner content of navbar  */
+
+/* for men section present in navbar  */
+
+.container_for_innercontent_of_navbar_items {
+    background-color: rgb(41, 40, 40, 0.7);
+}
+
+.container_for_home_and_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+/* setting property for home image used for going back to the home page  */
+
+.homeimage {
+    width: 6%;
+    margin-top: 10%;
+    cursor: pointer;
+}
+
+.homeimage img {
+    width: 100%;
+    filter: invert(1);
+}
+
+.homeimage img:hover {
+    transform: scale(1.06);
+}
+
+/* container for displaying them in row  */
+
+.inner_button_for_switching {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    margin-top: 3%;
+}
+
+/* css for giving the padding and margin between the button */
+
+.button_and_underline_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-right: 5%;
+    width: 100%;
+}
+
+.button_and_underline_container button {
+    color: white;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    padding: 1%;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    cursor: pointer;
+}
+
+.button_and_underline_container button:hover {
+    transform: scale(1.06);
+}
+
+.underline_for_content {
+    border: 2px solid #ff3c78;
+    background-color: #ff3c78;
+    width: 60%;
+}
+
+.container_for_images_of_innner_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+}
+
+.divs_for_putting_images {
+    display: flex;
+    flex-direction: row;
+}
+
+.image_for_inner_content {
+    min-width: 220px;
+    height: 250px;
+    margin: 0.5%;
+}
+
+.image_for_inner_content img {
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.topbrand {
+    position: relative;
+    left: 0%;
+    top: -15.50%;
+    background-color: rgb(41, 40, 40, 0.8);
+    font-size: 1.3rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+/* here i have done some changes in above value of topbrand for some contianer by creating a another class for those same objects  */
+.topbrand_lower {
+    top: -28.50%;
+}
+
+.topbrand_discount {
+    position: relative;
+    left: 42%;
+    top: -113%;
+    background-color: rgb(41, 40, 40, 0.8);
+    font-size: 0.7rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+    border-radius: 15%;
+    width: 55%;
+    cursor: pointer;
+}
+
+/* here i have done some changes in above value of topbrand discount for some contianer by creating a another class for those same objects  */
+.topbrand_discount_changed_property {
+    top: -125%;
+}
+
+.image_for_inner_content img:hover {
+    transform: scale(1.06);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.heading_container {
+    margin-bottom: 1%;
+    background: rgb(41, 40, 40, 0.70);
+
+}
+
+#header {
+    display: inline-block;
+    position: relative;
+    left: 43%;
+    height: 30px;
+    margin: 1%;
+}
+#header p {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    transition: all 0.3s ease-in-out;
+    font-size: 2.5rem;
+    position: relative;
+    top: -40px;
+}
+
+#header p:hover {
+    color: #001440;
+    transform: scale(1.06);
+    cursor: pointer;
+
+} */
+
+
+.main_container1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.main_container1::before {
+    content: "";
+    position: absolute;
+    background: url(shopping4.webp) no-repeat center center/cover;
+    width: 100%;
+    height: 155%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.90;
+}
+
+.mens_option_containeer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    width: 15%;
+    height: 133vh;
+    background: rgb(41, 40, 40, 0.70);
+    margin-right: 2%;
+}
+
+.mens_option_containeer h2 {
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+    position: relative;
+    left: 25%;
+}
+
+.buttons {
+    margin: 5%;
+    border: none;
+    font-size: 1.2rem;
+    font-family: 'Baloo Bhai 2', cursive;
+    border-radius: 10%;
+    color: white;
+
+    background-color: rgb(30, 144, 255, 0.1);
+}
+
+.buttons:hover {
+    transform: scale(1.09);
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* css code for container contaning image for men items  */
+
+/* .container_switcher {
+    width: 82%;
+    background: rgb(41, 40, 40, 0.70);
+    margin-right: 2%;
+
+}
+
+.container_for_images_of_innner_content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+
+}
+
+.divs_for_putting_images {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+}
+
+.image_for_inner_content {
+    min-width: 220px;
+    height: 250px;
+    margin: 1.5%;
+}
+
+.image_for_inner_content img {
+    border: 2px solid white;
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.image_for_inner_content img:hover {
+    transform: scale(1.06);
+}
+ */
+
+/* for expert view container  */
+
+/* #container_expert_view_launcher {
+    width: 5%;
+    height: 133vh;
+    margin-right: 2%;
+
+}
+
+.expert_view {
+    background-color: #001440;
+    font-family: 'Baloo Bhai 2', cursive;
+    width: 18%;
+    height: 8vh;
+    text-align: center;
+    color: white;
+    transform: rotate(90deg);
+    position: fixed;
+    right: -4%;
+    top: 36%;
+    cursor: pointer;
+    border-radius: 5%;
+    border: none;
+
+}
+
+.expert_view:hover {
+    background-color: #001440;
+    box-shadow: 0 0 5px #1145b6;
+} */
+
+
+/* 
+
+font-family: 'Baloo Bhai 2', cursive;
+font-family: 'Bree Serif', serif;
+ */
+
+/* 
+for backgroundcolor of sections 
+background-color: rgb(41, 40, 40); 
+*/

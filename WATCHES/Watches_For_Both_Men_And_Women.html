@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damensch BREEEZE Ultra-Light Boxer Short</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Bree+Serif&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            background: url(shopping4.webp) no-repeat center center/cover;
+            height: 69vh;
+        }
+
+        .maincontainer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 104vh;
+            background: rgb(41, 40, 40, 0.70);
+        }
+
+        #headings {
+            display: flex;
+            align-items: center;
+            align-content: center;
+
+        }
+
+        #company_name {
+            color: rgb(224, 255, 162);
+            font-family: 'Baloo Bhai 2', cursive;
+            position: relative;
+            left: 2%;
+        }
+
+        #company_name a{
+            color: rgb(224, 255, 162);
+            text-decoration: none;
+        }
+
+                
+        #company_name:hover {
+            transform: scale(1.06);
+        }
+        
+        #company_name a:hover {
+            cursor: pointer;
+            transform: scale(1.06);
+            color: greenyellow;
+        }
+
+        #topbrandname {
+            color: greenyellow;
+            font-family: 'Baloo Bhai 2', cursive;
+            position: relative;
+            left: 38%;
+
+        }
+
+        #topbrandname:hover {
+            cursor: pointer;
+
+        }
+
+        /* css code for container contaning image for men items  */
+
+        .container_switcher {
+            width: 90%;
+            margin-left: 15px;
+            height: 70vh;
+        }
+
+        .container_for_images_of_innner_content {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+            height: 80vh;
+        }
+
+
+        .divs_for_putting_images {
+            display: flex;
+            flex-direction: row;
+            box-sizing: border-box;
+        }
+
+        .image_for_inner_content {
+            min-width: 205px;
+            height: 250px;
+            margin: 0.84%;
+        }
+
+        .image_for_inner_content img {
+            border: 2px solid greenyellow;
+            width: 100%;
+            height: 100%;
+            border-radius: 5%;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .image_for_inner_content img:hover {
+            transform: scale(1.06);
+        }
+
+
+        /* css code for putting the discount and name of the brand  */
+
+        .topbrand {
+            position: relative;
+            left: 0.9%;
+            top: -23.62%;
+            background-color: rgb(41, 40, 40, 0.70);
+            font-size: 1.3rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            border-radius: 5%;
+            cursor: pointer;
+            color: greenyellow;
+        }
+
+        .topbrand_discount {
+            position: relative;
+            left: 42%;
+            top: -130%;
+            background-color: rgb(41, 40, 40, 0.70);
+            font-size: 0.7rem;
+            font-family: 'Baloo Bhai 2', cursive;
+            text-align: center;
+            border-radius: 15%;
+            width: 55%;
+            cursor: pointer;
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="maincontainer">
+        <div id="headings">
+            <h1 id="company_name"><a href="CompanyDescription.html" target="_blank">ShopOn</a></h1>
+            <h1 id="topbrandname"> Watches</h1>
+        </div>
+
+        <div class="container_switcher" id="main_container_switcher1">
+            <div class="container_for_images_of_innner_content">
+                <!-- first 4 images  for watches  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="watch1.webp" alt="image not found" id="rare_rabbit1_topbrand_images"
+                            onmouseover="onmoseoverchange1()" onmouseout="onmouseoutchange1()">
+                        <div class="topbrand">
+                            <p>Timex</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 50% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch5.webp" alt="image not found" id="rare_rabbit2_topbrand_images"
+                            onmouseover="onmoseoverchange2()" onmouseout="onmouseoutchange2()">
+                        <div class="topbrand">
+                            <p>Tissot</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 34% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch9.webp" alt="image not found" id="rare_rabbit3_topbrand_images"
+                            onmouseover="onmoseoverchange3()" onmouseout="onmouseoutchange3()">
+                        <div class="topbrand">
+                            <p>Swatch</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 60% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch13.webp" alt="image not found" id="rare_rabbit4_topbrand_images"
+                            onmouseover="onmoseoverchange4()" onmouseout="onmouseoutchange4()">
+                        <div class="topbrand">
+                            <p>Casio</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch17.webp" alt="image not found" id="rare_rabbit5_topbrand_images"
+                            onmouseover="onmoseoverchange5()" onmouseout="onmouseoutchange5()">
+                        <div class="topbrand">
+                            <p>Seiko</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 67% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch21.webp" alt="image not found" id="rare_rabbit6_topbrand_images"
+                            onmouseover="onmoseoverchange6()" onmouseout="onmouseoutchange6()">
+                        <div class="topbrand">
+                            <p>Orient</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 45% Off</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- next 6 images for watch  -->
+                <div class="divs_for_putting_images">
+                    <div class="image_for_inner_content">
+                        <img src="watch25.webp" alt="image not found" id="rare_rabbit7_topbrand_images"
+                            onmouseover="onmoseoverchange7()" onmouseout="onmouseoutchange7()">
+                        <div class="topbrand">
+                            <p>Richard Mille</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch29.webp" alt="image not found" id="rare_rabbit8_topbrand_images"
+                            onmouseover="onmoseoverchange8()" onmouseout="onmouseoutchange8()">
+                        <div class="topbrand">
+                            <p>Cartier</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 43% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch35.avif" alt="image not found" id="rare_rabbit9_topbrand_images"
+                            onmouseover="onmoseoverchange9()" onmouseout="onmouseoutchange9()">
+                        <div class="topbrand">
+                            <p>Audemars Piguet</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch39.jpg" alt="image not found" id="rare_rabbit10_topbrand_images"
+                            onmouseover="onmoseoverchange10()" onmouseout="onmouseoutchange10()">
+                        <div class="topbrand">
+                            <p>Rolex</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 76% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch43.jpg" alt="image not found" id="rare_rabbit11_topbrand_images"
+                            onmouseover="onmoseoverchange11()" onmouseout="onmouseoutchange11()">
+                        <div class="topbrand">
+                            <p>Omega</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 56% Off</h2>
+                        </div>
+                    </div>
+                    <div class="image_for_inner_content">
+                        <img src="watch47.webp" alt="image not found" id="rare_rabbit12_topbrand_images"
+                            onmouseover="onmoseoverchange12()" onmouseout="onmouseoutchange12()">
+                        <div class="topbrand">
+                            <p>Hublot</p>
+                        </div>
+                        <div class="topbrand_discount">
+                            <h2>Upto 66% Off</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const image_id1 = document.querySelector('#rare_rabbit1_topbrand_images');
+        const image_id2 = document.querySelector('#rare_rabbit2_topbrand_images');
+        const image_id3 = document.querySelector('#rare_rabbit3_topbrand_images');
+        const image_id4 = document.querySelector('#rare_rabbit4_topbrand_images');
+        const image_id5 = document.querySelector('#rare_rabbit5_topbrand_images');
+        const image_id6 = document.querySelector('#rare_rabbit6_topbrand_images');
+        const image_id7 = document.querySelector('#rare_rabbit7_topbrand_images');
+        const image_id8 = document.querySelector('#rare_rabbit8_topbrand_images');
+        const image_id9 = document.querySelector('#rare_rabbit9_topbrand_images');
+        const image_id10 = document.querySelector('#rare_rabbit10_topbrand_images');
+        const image_id11 = document.querySelector('#rare_rabbit11_topbrand_images');
+        const image_id12 = document.querySelector('#rare_rabbit12_topbrand_images');
+
+
+        let images1 = ["watch2.webp", "watch3.webp",
+            "watch4.webp", "watch1.webp"]
+        let images2 = ["watch6.webp", "watch7.webp",
+            "watch8.webp", "watch5.webp"]
+        let images3 = ["watch10.webp", "watch11.webp",
+            "watch12.webp", "watch9.webp"]
+        let images4 = ["watch14.webp", "watch15.webp",
+            "watch16.webp", "watch13.webp"]
+        let images5 = ["watch18.webp", "watch19.webp",
+            "watch20.webp", "watch17.webp"]
+        let images6 = ["watch22.webp", "watch23.webp",
+            "watch24.webp", "watch21.webp"]
+        let images7 = ["watch26.webp", "watch27.webp",
+            "watch28.webp", "watch25.webp"]
+        let images8 = ["watch30.webp", "watch31.webp",
+            "watch34.webp", "watch29.webp"]
+        let images9 = ["watch36.avif", "watch37.avif",
+            "watch38.avif", "watch35.avif"]
+        let images10 = ["watch40.jpg", "watch41.jpg",
+            "watch42.jpg", "watch39.jpg"]
+        let images11 = ["watch44.jpg", "watch45.jpg",
+            "watch46.jpg", "watch43.jpg"]
+        let images12 = ["watch48.webp", "watch49.webp",
+            "watch50.webp", "watch47.webp"]
+
+        let index = 0;
+
+        // for first image 
+        var chnageimages1;
+
+        function changeimage1() {
+            image_id1.src = images1[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange1() {
+            chnageimages1 = setInterval(changeimage1, 2000);
+        }
+
+        function onmouseoutchange1() {
+
+            clearInterval(chnageimages1);
+        }
+
+        // for second image 
+        var chnageimages2;
+
+        function changeimage2() {
+            image_id2.src = images2[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange2() {
+            chnageimages2 = setInterval(changeimage2, 2000);
+        }
+
+        function onmouseoutchange2() {
+            clearInterval(chnageimages2);
+        }
+
+        // for third image
+        var chnageimages3;
+
+        function changeimage3() {
+            image_id3.src = images3[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+
+        function onmoseoverchange3() {
+            chnageimages3 = setInterval(changeimage3, 2000);
+        }
+
+        function onmouseoutchange3() {
+            clearInterval(chnageimages3);
+        }
+
+        // for image4
+        var chnageimages4;
+
+        function changeimage4() {
+            image_id4.src = images4[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange4() {
+            chnageimages4 = setInterval(changeimage4, 2000);
+        }
+
+        function onmouseoutchange4() {
+            clearInterval(chnageimages4);
+        }
+
+        // for image5
+        var chnageimages5;
+
+        function changeimage5() {
+            image_id5.src = images5[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange5() {
+            chnageimages5 = setInterval(changeimage5, 2000);
+        }
+
+        function onmouseoutchange5() {
+            clearInterval(chnageimages5);
+        }
+
+        // for image 6
+        var chnageimages6;
+
+        function changeimage6() {
+            image_id6.src = images6[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange6() {
+            chnageimages6 = setInterval(changeimage6, 2000);
+        }
+
+        function onmouseoutchange6() {
+            clearInterval(chnageimages6);
+        }
+
+        // for image 7
+        var chnageimages7;
+
+        function changeimage7() {
+            image_id7.src = images7[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange7() {
+            chnageimages7 = setInterval(changeimage7, 2000);
+        }
+
+        function onmouseoutchange7() {
+            clearInterval(chnageimages7);
+        }
+
+        // for image 8
+        var chnageimages8;
+
+        function changeimage8() {
+            image_id8.src = images8[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange8() {
+            chnageimages8 = setInterval(changeimage8, 2000);
+        }
+
+        function onmouseoutchange8() {
+            clearInterval(chnageimages8);
+        }
+
+        // for images9
+        var chnageimages9;
+
+        function changeimage9() {
+            image_id9.src = images9[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange9() {
+            chnageimages9 = setInterval(changeimage9, 2000);
+        }
+
+        function onmouseoutchange9() {
+            clearInterval(chnageimages9);
+        }
+
+        // for image 10
+        var chnageimages10;
+
+        function changeimage10() {
+            image_id10.src = images10[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange10() {
+            chnageimages10 = setInterval(changeimage10, 2000);
+        }
+
+        function onmouseoutchange10() {
+            clearInterval(chnageimages10);
+        }
+
+        // for image 11
+
+        var chnageimages11;
+
+        function changeimage11() {
+            image_id11.src = images11[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange11() {
+            chnageimages11 = setInterval(changeimage11, 2000);
+        }
+
+        function onmouseoutchange11() {
+            clearInterval(chnageimages11);
+        }
+
+        // for images12
+        var chnageimages12;
+
+        function changeimage12() {
+            image_id12.src = images12[index];
+            if (index >= 3) {
+                index = 0;
+            }
+            else {
+                index++;
+            }
+        }
+        function onmoseoverchange12() {
+            chnageimages12 = setInterval(changeimage12, 2000);
+        }
+
+        function onmouseoutchange12() {
+            clearInterval(chnageimages12);
+        }
+
+    </script>
+
+</body>
+
+</html>
